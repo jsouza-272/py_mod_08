@@ -35,6 +35,8 @@ if __name__ == "__main__":
         fail = True
 
     if fail:
+        print('Use "pip install -r requirements.txt" or "poetry install"'
+              ' to install dependences')
         sys.exit(1)
 
     print("\nAnalyzing Matrix data...")
@@ -47,7 +49,7 @@ if __name__ == "__main__":
             print('\nConnection error:\n')
             print(e)
             sys.exit(1)
-        
+
         # take what you got from the API and format it
         data = response.json()[1]
         data_format = [{'year': item.get('date'),
