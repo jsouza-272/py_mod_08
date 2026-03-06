@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ex1"
-version = "0.0.1"
+version = "0.1.0"
 description = ""
 authors = ["jsouza <jsouza@student.42lisboa.com>"]
 package-mode = false
